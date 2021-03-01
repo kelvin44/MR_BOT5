@@ -673,6 +673,16 @@ client.on('group-participants-update', async (anu) => {
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
+		        case 'tahta':
+					if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (args.length < 1) return reply(`「❗」Contoh : ${prefix}hartatahta hanya dia`)
+					har = body.slice(12)
+					reply('「❗」Hirti Tihti Tai Anjg :v')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					await limitAdd(sender)
+				break
 			case 'happymod':
 				if (!isRegistered) return reply(ind.noregis())
 				if (!isPrem) return reply(ind.premon(pushname))
