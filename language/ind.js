@@ -138,6 +138,12 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}ttp*
 ┣⊱ *${prefix}stickerhide* <text>
 ┣⊱ *${prefix}emoji*
+┣⊱ *${prefix}textlight* <text1|text2>
+┣⊱ *${prefix}pornhub* <text>
+┣⊱ *${prefix}tahta <text>
+┣⊱ *${prefix}gets*
+┣⊱ *${prefix}stickerlist*
+┣⊱ *${prefix}addsticker*
 ┣━━⊱  *FUN MENU*  ⊰━━━┫
 ┣⊱ *${prefix}lirik* <text>
 ┣⊱ *${prefix}artinama*
@@ -150,6 +156,13 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}tampar*
 ┣⊱ *${prefix}moddroid* <teks> *[VIP]*
 ┣⊱ *${prefix}happymod* <teks> *[VIP]*
+┣⊱ *${prefix}tebakgambar*
+┣⊱ *${prefix}meme*
+┣⊱ *${prefix}gemok*
+┣⊱ *${prefix}tupai*
+┣⊱ *${prefix}getimage*
+┣⊱ *${prefix}getvn*
+┣⊱ *${prefix}listvn*
 ┣━━⊱ *MUTUAL* ⊰━━━━━┫
 ┣⊱ *${prefix}mutual*
 ┣⊱ *${prefix}next*
@@ -163,10 +176,17 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}tiktokstalk* <username> *[VIP]*
 ┣⊱ *${prefix}ssweb* <link>
 ┣⊱ *${prefix}kbbi* <text>
+┣⊱ *${prefix}imagelist*
 ┣━━⊱ *YT & SONG* ⊰━━━┫
 ┣⊱ *${prefix}ytmp3* <link> *[VIP]*
 ┣⊱ *${prefix}ytmp4* <link> *[VIP]*
 ┣⊱ *${prefix}joox* <judul> *[VIP]*
+┣⊱ *${prefix}tomp3* <video>
+┣⊱ *${prefix}bass*
+┣⊱ *${prefix}slowmo*
+┣⊱ *${prefix}listvideo*
+┣⊱ *${prefix}getvideo*
+┣⊱ *${prefix}addvideo*
 ┣━━⊱  *NSFW MENU*  ⊰━┫
 ┣⊱ *${prefix}anjing*
 ┣⊱ *${prefix}blowjob*
@@ -215,6 +235,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}kickall* <rawan ban>
 ┣⊱ *${prefix}setreply* <teks>
 ┣⊱ *${prefix}setprefix* <symbol>
+┣⊱ *${prefix}setmemlimit* <angka>
 ┣⊱ *${prefix}clearall*
 ┣⊱ *${prefix}block* <tag>
 ┣⊱ *${prefix}unblock* <tag>
