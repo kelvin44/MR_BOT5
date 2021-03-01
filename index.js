@@ -673,7 +673,24 @@ client.on('group-participants-update', async (anu) => {
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
-		        case 'tahta':
+			 case 'join':
+            if (args.length === 1) return client.reply(from, 'Hanya Owner yang bisa memasukan Bot ke dalam Grup!', id)
+            if (!isOwner) return client.reply(from, 'Perintah ini hanya untuk Owner KOPET', id)
+            const link = body.slice(6)
+            const tGr = await client.getAllGroups()
+            const minMem = 5
+            const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
+            const check = await client.inviteInfo(link)
+            if (!isLink) return client.reply(from, 'Ini link? 👊🤬', id)
+            if (tGr.length > 256) return client.reply(from, 'Maaf jumlah group sudah maksimal!', id)
+            if (check.size < minMem) return client.reply(from, 'Member group tidak melebihi 5, bot tidak bisa masuk', id)
+            if (check.status === 200) {
+                await tobz.joinGroupViaLink(link).then(() => client.reply(from, 'Bot akan segera masuk!'))
+            } else {
+                client.reply(from, 'Link group tidak valid!', id)
+            }
+            break
+		                  case 'tahta':
 					if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (args.length < 1) return reply(`「❗」Contoh : ${prefix}hartatahta hanya dia`)
@@ -785,6 +802,7 @@ client.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
 					break
                 case 'ranime':
+		case 'vvibu':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (!isNsfw) return reply(ind.nsfwoff())
@@ -800,6 +818,19 @@ client.on('group-participants-update', async (anu) => {
 				if (!isPrem) return reply(ind.premon(pushname))
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
                 data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=BotWeA`, {method: 'get'})
+               if (data.error) return reply(data.error)
+                 infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.judul}\nAlbum : ${data.result.album}\nDipublikasi : ${data.result.dipublikasi}`
+                buffer = await getBuffer(data.result.thumb)
+                lagu = await getBuffer(data.result.mp3)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek})
+                await limitAdd(sender)
+                break
+		case 'play':
+				if (!isRegistered) return reply(ind.noregis())
+				if (!isPrem) return reply(ind.premon(pushname))
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+                data = await fetchJson(`https://tobz-api.herokuapp.com/api/play?q=${body.slice(6)}&apikey=BotWeA`, {method: 'get'})
                if (data.error) return reply(data.error)
                  infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.judul}\nAlbum : ${data.result.album}\nDipublikasi : ${data.result.dipublikasi}`
                 buffer = await getBuffer(data.result.thumb)
@@ -1474,7 +1505,7 @@ client.on('group-participants-update', async (anu) => {
 						fs.unlinkSync(media)
 						if (err) return reply(ind.stikga())
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '𝗱𝗮?? 𝗷𝗮𝗱𝗶 '})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*nih kentod*'})
 						fs.unlinkSync(ran)
 					})
 					await limitAdd(sender)
@@ -1550,7 +1581,7 @@ client.on('group-participants-update', async (anu) => {
                       if (isLimit(sender)) return reply(ind.limitend(pushname))
                       if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan oleh owner`)
                       if (isOwner) {
-                      const kuntull = 999999999
+                      const kuntull = 999999999999999999999999999999999999999
                       addLevelingXp(sender, one)
                       addLevelingLevel(sender, 99)
                       reply(`karena anda owner kami dari team bot mengirim ${kuntull}Xp untuk anda`)
@@ -1776,7 +1807,7 @@ client.on('group-participants-update', async (anu) => {
                     reply('Success Menambahkan Bad Word!')
                     break
 		case 'halo':
-		client.reply(from, 'Hi i`m *MR BOT* type #menu to accsess', id)
+		client.reply(from, 'Hi i`m *MR BOT* type #menu to accsess')
 	        break
 		
 		     break
