@@ -1,17 +1,17 @@
 
 <p align="center">
-<a href="https://github.com/affisjunianto/followers"><img title="Followers" src="https://img.shields.io/github/followers/affisjunianto?color=blue&style=flat-square"></a>
-<a href="https://github.com/affisjunianto/botwasapv5/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/affisjunianto/botwasapv5?color=red&style=flat-square"></a>
-<a href="https://github.com/affisjunianto/botwasapv5/network/members"><img title="Forks" src="http://img.shields.io/github/forks/affisjunianto/botwasapv5?color=red&style=flat-square"></a>
-<a href="https://github.com/affisjunianto/botwasapv5/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/affisjunianto/botwasapv5?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Faffisjunianto%2Fbotwasapv5&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Support&edge_flat=false"/></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"</a>
+<a href="https://github.com/kelvin44/followers"><img title="Followers" src="https://img.shields.io/github/followers/kelvin44?color=blue&style=flat-square"></a>
+<a href="https://github.com/kelvin44/MR_BOT5/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/kelvin44/MR_BOT5?color=red&style=flat-square"></a>
+<a href="https://github.com/kelvin44/MR_BOT5/network/members"><img title="Forks" src="http://img.shields.io/github/forks/kelvin44/MR_BOT5?color=red&style=flat-square"></a>
+<a href="https://github.com/kelvin44/MR_BOT5/watchers"><img title="Watching" src="https://img.shields.io/github/watcherskelvin44/MR_BOT5?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkelcin44%2Fbotwasapv5&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Support&edge_flat=false"/></a>
+<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-NO-blue.svg"</a>
 </p>
 
 ## Clone this project
 
 ```bash
-> git clone https://github.com/affisjunianto/botwasapv5
+> git clone https://github.com/kelvin44/MR_BOT5
 ```
 
 ## Install the dependencies:
@@ -19,7 +19,7 @@ Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
 ```bash
-> cd botwasapv5
+> cd MR_BOT5
 > bash install.sh
 ```
 
@@ -63,11 +63,14 @@ you've just cloned!!
 ## Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Mhankbarbar`](https://github.com/MhankBarBar)
+* [`affisjunianto`](https://github.com/affisjunianto)
+* [`kelvin44`](https://github.com/kelvin44)
 
 
 ## whatsapp number
-* [`WhatsApp`](wa.me/6282334297175)
+* [`WhatsApp`](wa.me/6281218305935)
+* [`WhatsApp bot`](https://xnxx.com)
 ### Donate
-* [`Saweria`](https://saweria.co/ampibibot)
-* [`Dana : +62895710073737`]
-* [`Pulsa : +628233429775`]
+* [`Trakteer`](https://trakteer.id/kelvin44)
+* [`Dana : +6285212830930`]
+* [`Pulsa : +6281218305935`]
