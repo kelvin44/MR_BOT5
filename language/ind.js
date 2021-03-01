@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 DAFTAR DULU TOD 」*\n\n*cara daftar ${prefix}verify nama|umur* \n*contoh ${prefix}verify ${pushname}|17*\nIG OWNER : https://instagram.com/ff.kelvin15\n\nNOTE JANGAN LUPA SAVE NO KU`
 }
 
 exports.rediregis = () => {
@@ -125,7 +125,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
 ┣⊱ *Role* : ${role}
 ┣⊱ *User register* : ${_registered.length}
-┗━━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━━┛
+┗━━━⊱  ⸨ *MR BOT* ⸩  ⊰━━━━┛
 
  *${prefix}info*
  *${prefix}donasi*
@@ -224,15 +224,14 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}setppbot*
 ┣━━⊱ *THANGKS TO* ⊰━━┫
 ┃
-┣⊱ *AFFIS JUNIANTO* <dev>
+┣⊱ *KELVIN44* <dev>
 ┣⊱ *FADHIL GRAPHY* <partner>
 ┣⊱ *MHANKBARBARS* <sc ori>
 ┣⊱ *MYBOT TEAM* <team>
 ┃
-┣⊱ NOTE : TQTO DI HAPUS
-┃ GW GAK UP LAGI OKE
+┣⊱ GW GAK UP LAGI OKE:D
 ┃
-┗━━⊱  ⸨ *X-BOT* ⸩  ⊰━━━━┛
+┗━━⊱  ⸨ *MR BOT* ⸩  ⊰━━━━┛
 `
 }
 
@@ -271,7 +270,7 @@ exports.premadd = (pnom) => {
 	return`*「 PREMIUM ADD 」*
 
 *Name* : ${pnom}
-*Expired* : 30 DAY\n*thank for order premium*`
+*Expired* : 30 DAY\n*makasih telah order premium><*`
 }
 
 exports.dellprem = (hnom) => {
