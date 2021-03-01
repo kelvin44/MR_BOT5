@@ -45,7 +45,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD' 
 blocked = []   
 prefix = '#'
-limitawal = 30
+limitawal = 99
 memberlimit = 0
 cr = '*JANGAN LUPA FOLLOW IG OWNER!*'
 /*************************************/
@@ -674,15 +674,15 @@ client.on('group-participants-update', async (anu) => {
 			await limitAdd(sender)
 			break
 			 case 'join':
-            if (args.length === 1) return client.reply(from, 'Hanya Owner yang bisa memasukan Bot ke dalam Grup!', id)
-            if (!isOwner) return client.reply(from, 'Perintah ini hanya untuk Owner KOPET', id)
+            if (args.length === 1) return reply(from, 'Hanya Owner yang bisa memasukan Bot ke dalam Grup!', id)
+            if (!isOwner) return reply(from, 'Perintah ini hanya untuk Owner KOPET', id)
             const link = body.slice(6)
-            const tGr = await client.getAllGroups()
+            const tGr = await.getAllGroups()
             const minMem = 5
             const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
-            const check = await client.inviteInfo(link)
-            if (!isLink) return client.reply(from, 'Ini link? 👊🤬', id)
-            if (tGr.length > 256) return client.reply(from, 'Maaf jumlah group sudah maksimal!', id)
+            const check = await.inviteInfo(link)
+            if (!isLink) return reply(from, 'Ini link? 👊🤬', id)
+            if (tGr.length > 256) return reply(from, 'Maaf jumlah group sudah maksimal!', id)
             if (check.size < minMem) return client.reply(from, 'Member group tidak melebihi 5, bot tidak bisa masuk', id)
             if (check.status === 200) {
                 await tobz.joinGroupViaLink(link).then(() => client.reply(from, 'Bot akan segera masuk!'))
