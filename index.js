@@ -679,7 +679,7 @@ client.on('group-participants-update', async (anu) => {
 					if (args.length < 1) return reply(`「❗」Contoh : ${prefix}hartatahta hanya dia`)
 					har = body.slice(12)
 					reply('「❗」Hirti Tihti Tai Anjg :v')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=apivinz`)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${har}&apikey=BotWeA`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 				break
